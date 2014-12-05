@@ -1,0 +1,26 @@
+{
+  "name": "kosich.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kosich/kosich.github.io",
+  "authors": [
+    "kosich <kosich@users.noreply.github.com>"
+  ],
+  "main": "README",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "lesshat": "~3.0.2",
+    "normalize.css": "~3.0.2"
+  }
+}

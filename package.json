@@ -1,0 +1,26 @@
+{
+  "name": "kosich.github.io",
+  "version": "0.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.3.12",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jade": "^0.13.0",
+    "grunt-contrib-less": "^0.12.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kosich/kosich.github.io.git"
+  },
+  "author": "Kos Deadsky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kosich/kosich.github.io/issues"
+  },
+  "homepage": "https://github.com/kosich/kosich.github.io"
+}
