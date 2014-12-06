@@ -2,7 +2,7 @@
   font-family: 'Economica';
   font-style: normal;
   font-weight: 400;
-  src: local('Economica'), url(fonts/Economica-Regular-OTF.otf) format('otf');
+  src: local('Economica'), url(fonts/economica/Economica-Regular-OTF.otf) format('opentype');
 }
 body {
   padding: 2em;
@@ -47,6 +47,7 @@ body {
 #contents #img > .name {
   font-family: 'Economica';
   font-weight: normal;
+  font-size: 19px;
   line-height: 1em;
   position: absolute;
   width: 100%;
@@ -62,4 +63,5 @@ body {
   text-align: center;
   box-sizing: border-box;
   width: 200px;
+  text-shadow: 0 0 1px #fff;
 }

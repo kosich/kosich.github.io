@@ -14,18 +14,30 @@ module.exports = function(grunt){
             }
         },
         less: {
-            production:{
+            production: {
+                compress : true,
+                cleancss : true,
                 files: {
                     "styles/style.css": "styles/style.less"
-                }    }
+                }             
+            }
+        },
+        cssmin: {
+            minify: {
+                expand: true,
+                cwd: 'styles/',
+                src: ['*.css', '!*.min.css'],
+                dest: 'styles/',
+                ext: '.min.css'
+            }
         }
     });
 
-    //jade
-    grunt.loadNpmTasks('grunt-contrib-jade');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-jade');
 
     // Default task(s).
-    grunt.registerTask('default', ['less' , 'jade']);
+    grunt.registerTask('default', ['less:production', 'cssmin', 'jade']);
 
 };
