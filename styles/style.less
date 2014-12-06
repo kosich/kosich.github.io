@@ -18,23 +18,22 @@ body{
 #contents{
     @width : 300px;
     @imgside : 100px;
+    @br : (@imgside/2 + 2);//padding + border = additional 2px 
 
     position:relative;
     top:@imgside*2;
-    top:50vh;
-    margin-top: -@imgside/2;
+    top:33vh;
+    margin: -@br auto 0;
 
     background-color:#f7f7f7;
     line-height: @imgside;
     display: inline-block;
     vertical-align: middle;
     width: @width;
-    margin: 0 auto;
     box-shadow: 0 0 2px #000;
     padding: 1px;
     border: 1px solid #fff;
 
-    @br : (@imgside/2 + 2);//padding + border = additional 2px 
     border-radius: @br 2px 2px @br;
 
     #img{
@@ -66,10 +65,13 @@ body{
     }
 
     #main{
+        font-family: 'Arial';
+        font-size: 30px;
         display:inline-block;
-        color: #4f4f4f;
+        color: #a4a4a4;
         line-height:1em;
         text-align: center;
+        vertical-align:middle;
         box-sizing: border-box;
         width: @width - @imgside;
         text-shadow: 0 0 1px #fff;
