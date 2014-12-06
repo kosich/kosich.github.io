@@ -1,24 +1,28 @@
 @import 'fonts.import.less';
+@import '../bower_components/normalize.css/normalize.css';
 
 body{
-    padding: 2em;
+    padding: 0;
 }
 
 #wrapper{
     background-color:#555;
-
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    line-height: 100vh;
     text-align: center;
 }
 
 #contents{
     @width : 300px;
     @imgside : 100px;
+
+    position:relative;
+    top:@imgside*2;
+    top:50vh;
+    margin-top: -@imgside/2;
 
     background-color:#f7f7f7;
     line-height: @imgside;
